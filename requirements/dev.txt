@@ -1,0 +1,11 @@
+-r prod.txt
+
+# Testing
+pytest==3.0.7
+factory-boy==2.8.1
+
+# Command line
+ipython==5.3.0
+
+# Lint and code style
+flake8==3.3.0

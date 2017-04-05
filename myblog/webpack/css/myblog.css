@@ -1,0 +1,17 @@
+.grumpy-bg {
+    /* Images loaded in a CSS managed by Webpack are also managed by Webpack */
+    background: url("../img/grumpy.jpg") no-repeat center;
+    min-height: 200px;
+}
+
+a {
+    background-color: transparent;
+    display: inline-block;
+    line-height: 1px;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+a img {
+    width: 60px;
+}

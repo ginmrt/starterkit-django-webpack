@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8" />
+        {# Global stylesheets. Not rendered with HMR development mode. #}
+        {{ render_bundle('vendorcss', 'css') }}
+        {{ render_bundle('base', 'css') }}
+
+        {% block extra_css %}
+            {# Override this in templates to add extra stylesheets #}
+        {% endblock %}
+    </head>
+
+    <body class="{% block body_class %}{% endblock %}">
+        {% block header %}
+            <header id="head">
+                <div>
+                    <h1><img class="animated infinite pulse" src="{{ static('img/h1grumpy.png') }}" title="Very Grumpy"/></h1>
+                </div>
+            </header>
+        {% endblock %}
+
+        {% block content %}{% endblock %}
+
+        {# Global javascript #}
+        {{ render_bundle('manifest', 'js') }}
+        {{ render_bundle('vendorjs', 'js') }}
+        {{ render_bundle('vendorcss', 'js') }}
+        {{ render_bundle('base', 'js') }}
+
+        {% block extra_js %}
+            {# Override this in templates to add extra javascript #}
+        {% endblock %}
+
+        <footer id="foot">
+            <div>
+                Footer
+            </div>
+        </footer>
+    </body>
+</html>

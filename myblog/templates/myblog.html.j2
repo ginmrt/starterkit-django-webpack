@@ -1,0 +1,28 @@
+{% extends "base.html.j2" %}
+
+{% block body_class %}myblog{% endblock %}
+
+{% block extra_css %}
+    {{ render_bundle('myblog', 'css') }}
+{% endblock %}
+
+{% block content %}
+    <div>
+        <h2>Demo App: My Blog</h2>
+    </div>
+
+    <div class="grumpy-bg">
+    </div>
+
+    <div>
+        <a href="https://github.com/ginmrt/starterkit-django-webpack" target="_blank" rel="noopener">
+
+            <img id="github" src="" alt="`starterkit-django-webpack` on Github" title="`starterkit-django-webpack` on Github"/>
+        </a>
+    </div>
+
+{% endblock %}
+
+{% block extra_js %}
+    {{ render_bundle('myblog', 'js') }}
+{% endblock %}

@@ -1,0 +1,18 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2, div, footer {
+    text-align: center;
+}
+
+footer {
+    background-color: gray;
+    /* Play with HMR by swapping the background color */
+    /*background-color: red;*/
+}
